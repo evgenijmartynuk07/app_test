@@ -103,7 +103,6 @@ class TestTripAdvisorApp(unittest.TestCase):
     def write_all_deals(
             self,
             proposals: list[webdriver],
-            hotel_name: str
     ) -> dict:
 
         date = self.driver.find_element(
@@ -176,7 +175,6 @@ class TestTripAdvisorApp(unittest.TestCase):
                                 MobileBy.ID,
                                 "com.tripadvisor.tripadvisor:id/cardHotelOffer"
                             ),
-                            self.hotel_name
                         )
                     )
 
