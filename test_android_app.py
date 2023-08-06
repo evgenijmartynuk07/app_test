@@ -123,7 +123,7 @@ class TestTripAdvisorApp(unittest.TestCase):
         if not os.path.exists(screenshots_folder):
             os.makedirs(screenshots_folder)
         screenshot_path = os.path.join(
-            screenshots_folder, f"{hotel_name}: {date}.png"
+            screenshots_folder, f"{self.hotel_name}: {date}.png"
         )
         self.driver.save_screenshot(screenshot_path)
 
